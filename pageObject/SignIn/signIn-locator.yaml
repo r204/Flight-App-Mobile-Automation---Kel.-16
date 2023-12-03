@@ -1,0 +1,3 @@
+username_input: '//*[@resource-id="com.example.myapplication:id/username"]'
+password_input: '//*[@resource-id="com.example.myapplication:id/password"]'
+signin_button: '//*[@resource-id="com.example.myapplication:id/signIn"]'
