@@ -12,6 +12,7 @@ ${VALID_USERNAME}       support@ngendigital.com
 ${VALID_PASSWORD}       abc123
 
 *** Keywords ***
+# ONE WAY
 Booking For One Way Option Steps
     [Arguments]                        ${dateBook}    
     ...                                ${bookFlight}
@@ -27,7 +28,7 @@ Booking For One Way Option Steps
     Select To London
     Select Flight Class
     Select Class Economy
-    # Select Date
+    # SELECT DATE
     IF   '${dateBook}' == 'startendDate'
         Select Start Date
         Select End Date  
@@ -41,7 +42,7 @@ Booking For One Way Option Steps
     ELSE
         Log    dateBook is not valid
     END
-    # Select Flight Type
+    # SELECT TYPE
     IF   '${bookFlight}' == 'flight'
         Select Type Flight
     ELSE IF    '${bookFlight}' == 'flight and hotel'
@@ -53,7 +54,7 @@ Booking For One Way Option Steps
     Select Price
     Click Confirm Booking
 
-#  Round Trip
+#  ROUND TRIP
 Booking For Round Trip Option Steps
     [Arguments]                        ${dateBook}    
     ...                                ${bookFlight}
@@ -69,7 +70,7 @@ Booking For Round Trip Option Steps
     Select To Ottawa
     Select Flight Class
     Select Class Economy
-    # Conditional for argument $dateBook}
+    # SELECT DATE
     IF   '${dateBook}' == 'startendDate'
         Select Start Date
         Select End Date  
@@ -83,7 +84,7 @@ Booking For Round Trip Option Steps
     ELSE
         Log    dateBook is not valid
     END
-    # Conditional for argument ${bookFlight}
+    # SELECT TYPE
     IF   '${bookFlight}' == 'flight'
         Select Type Flight
     ELSE IF    '${bookFlight}' == 'flight and hotel'
@@ -95,6 +96,7 @@ Booking For Round Trip Option Steps
     Select Price
     Click Confirm Booking
 
+# WITHOUT SELECT FROM AND TO CITY
 Booking For One Way Option Without Select From and To City Steps
     [Arguments]                        ${dateBook}    
     ...                                ${bookFlight}
@@ -106,7 +108,7 @@ Booking For One Way Option Without Select From and To City Steps
     Click One Way Trip
     Select Flight Class
     Select Class Economy
-    # Conditional for argument $dateBook}
+    # SELECT DATE
     IF   '${dateBook}' == 'startendDate'
         Select Start Date
         Select End Date  
@@ -120,7 +122,7 @@ Booking For One Way Option Without Select From and To City Steps
     ELSE
         Log    dateBook is not valid
     END
-    # Conditional for argument ${bookFlight}
+    # SELECT TYPE
     IF   '${bookFlight}' == 'flight'
         Select Type Flight
     ELSE IF    '${bookFlight}' == 'flight and hotel'
@@ -132,6 +134,7 @@ Booking For One Way Option Without Select From and To City Steps
     Select Price
     Click Confirm Booking
 
+# WITHOUT SELECT PRICE
 Booking For One Way Option Without Select Price
     [Arguments]                        ${dateBook}    
     ...                                ${bookFlight}
@@ -143,7 +146,7 @@ Booking For One Way Option Without Select Price
     Click One Way Trip
     Select Flight Class
     Select Class Economy
-    # Conditional for argument $dateBook}
+    # SELECT DATE
     IF   '${dateBook}' == 'startendDate'
         Select Start Date
         Select End Date  
@@ -157,7 +160,7 @@ Booking For One Way Option Without Select Price
     ELSE
         Log    dateBook is not valid
     END
-    # Conditional for argument ${bookFlight}
+    # SELECT TYPE
     IF   '${bookFlight}' == 'flight'
         Select Type Flight
     ELSE IF    '${bookFlight}' == 'flight and hotel'
@@ -169,7 +172,7 @@ Booking For One Way Option Without Select Price
     Click Confirm Booking
 
 *** Test Cases ***
-# ONE WAY OPTION #
+# ========== ONE WAY OPTION ========== #
 Booking in One Way Flight and Type Flight
     Booking For One Way Option Steps    startendDate    
     ...                                 flight
@@ -203,7 +206,7 @@ Booking One Way Flight End Date < Start Date
     ...                                flight
 
 
-# ROUND TRIP OPTION #
+# ========= ROUND TRIP OPTION ========= #
 Booking Round Trip Flight
     Booking For Round Trip Option Steps   startendDate    
     ...                                   flight
@@ -236,7 +239,7 @@ Booking Round Trip Flight End Date < Start Date
     Booking For Round Trip Option Steps   endstartDate   
     ...                                   flight
 
-# WITHOUT SELECT FROM AND TO CITY #
+# ==========  WITHOUT SELECT FROM AND TO CITY ========== #
 Booking in One Way Flight and Type Flight Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps    startendDate    
     ...                                                                 flight
@@ -269,7 +272,7 @@ Booking One Way Flight End Date < Start Date Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   endstartDate   
     ...                                                                flight 
 
-# Without Select Price #
+# ========= WITHOUT SELECT PRICE ========== #
 Booking in One Way Flight and Type Flight Without Select Price
     Booking For One Way Option Without Select Price    startendDate    
     ...                                                flight
