@@ -9,8 +9,6 @@
     <tbody>
         <tr>
             <td>"Agung"</td>
-        </tr>
-        <tr>
             <td>"Izzah Tazkiyah"</td>
         </tr>
     </tbody>
