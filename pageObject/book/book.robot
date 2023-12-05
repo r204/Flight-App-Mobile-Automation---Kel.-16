@@ -115,9 +115,9 @@ Click Submit Book Flight
     Click Element                    ${bookFlightButton}
 
 Select Price
-    Wait Until Element Is Visible    ${price-second}
-    Click Element                    ${price-second}
+    Wait Until Element Is Visible    ${price}
+    Click Element                    ${price}
 
 Click Confirm Booking
-    Wait Until Element Is Visible    ${button-confirm-order}
-    Click Element                    ${button-confirm-order}
+    Wait Until Element Is Visible    ${confirmBook}
+    Click Element                    ${confirmBook}
