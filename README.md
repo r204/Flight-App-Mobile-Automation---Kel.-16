@@ -9,11 +9,11 @@
     <tbody>
         <tr>
             <td>Sign In</td>
-            <td>Agung</td>
+            <td>Muhamad Agung Raharjo</td>
         </tr>
         <tr>
             <td>Book Menu</td>
-            <td>Izzah</td>
+            <td>Izzah Tazkiyah</td>
         </tr>
     </tbody>
   </table>
