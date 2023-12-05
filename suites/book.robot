@@ -10,6 +10,7 @@ Test Teardown   Close Flight Application
 *** Variables ***
 ${VALID_USERNAME}       support@ngendigital.com
 ${VALID_PASSWORD}       abc123
+${SUCCESS_BOOK}         //android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]
 
 *** Keywords ***
 # ONE WAY
@@ -176,10 +177,12 @@ Booking For One Way Option Without Select Price
 Booking in One Way Flight and Type Flight
     Booking For One Way Option Steps    startendDate    
     ...                                 flight
+    Wait Until Element Is Visible       ${SUCCESS_BOOK}
 
 Booking in One Way Flight and Type Flight Hotel
     Booking For One Way Option Steps    startendDate   
     ...                                 flight and hotel
+    Wait Until Element Is Visible       ${SUCCESS_BOOK}
 
 Booking One Way Flight Without Select Book Type
     Booking For One Way Option Steps   startendDate    
@@ -210,10 +213,12 @@ Booking One Way Flight End Date < Start Date
 Booking Round Trip Flight
     Booking For Round Trip Option Steps   startendDate    
     ...                                   flight
+    Wait Until Element Is Visible         ${SUCCESS_BOOK}
 
 Booking Round Trip Flight And Hotel
     Booking For Round Trip Option Steps   startendDate    
     ...                                   flight and hotel
+    Wait Until Element Is Visible         ${SUCCESS_BOOK}
 
 Booking Round Trip Flight Without Select Book Type
     Booking For Round Trip Option Steps   startendDate    
@@ -240,35 +245,35 @@ Booking Round Trip Flight End Date < Start Date
     ...                                   flight
 
 # ==========  WITHOUT SELECT FROM AND TO CITY ========== #
-Booking in One Way Flight and Type Flight Without Select From and To City
+Booking in One Way Flight and Type Flight - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps    startendDate    
     ...                                                                 flight
 
-Booking in One Way Flight and Type Flight Hotel Without Select From and To City
+Booking in One Way Flight and Type Flight Hotel - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps    startendDate   
     ...                                                                 flight and hotel
 
-Booking One Way Flight Without Select Book Type Without Select From and To City
+Booking One Way Flight Without Select Book Type - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   startendDate    
     ...                                                                " "
 
 # Flaky
-Booking One Way Flight Without Selecting Start Date and End Date Without Select From and To City
+Booking One Way Flight Without Selecting Start Date and End Date - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   " "    
     ...                                                                flight
 
 # Flaky
-Booking One Way Flight Without Selecting Start Date Without Select From and To City
+Booking One Way Flight Without Selecting Start Date - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   endDate   
     ...                                                                flight
 
 #Flaky
-Booking One Way Flight Without Selecting End Date Without Select From and To City
+Booking One Way Flight Without Selecting End Date - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   startDate   
     ...                                                                flight   
 
 #Flaky
-Booking One Way Flight End Date < Start Date Without Select From and To City
+Booking One Way Flight End Date < Start Date - Without Select From and To City
     Booking For One Way Option Without Select From and To City Steps   endstartDate   
     ...                                                                flight 
 
