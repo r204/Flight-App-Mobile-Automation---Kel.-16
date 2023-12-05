@@ -15,5 +15,5 @@ Input Password signIn
     Input Text    ${password_input}    ${password}
 
 Click signIn Button
-    Wait Until Element Is Visible    ${password_input}
+    Wait Until Element Is Visible    ${signin_button}
     Click Element    ${signin_button}
