@@ -2,14 +2,18 @@
  <table>
     <thead>
       <tr>
-        <th>Sign In</th>
-        <th>Book</th>
+        <th>Fitur</th>
+        <th>Nama Anggota</th>
       </tr>
     </thead>
     <tbody>
         <tr>
+            <td>"Sign In"</td>
             <td>"Agung"</td>
-            <td>"Izzah Tazkiyah"</td>
+        </tr>
+        <tr>
+            <td>"Boook"</td>
+            <td>"Izzah"</td>
         </tr>
     </tbody>
   </table>
