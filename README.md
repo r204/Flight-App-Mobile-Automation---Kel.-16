@@ -8,12 +8,12 @@
     </thead>
     <tbody>
         <tr>
-            <td>"Sign In"</td>
-            <td>"Agung"</td>
+            <td>Sign In</td>
+            <td>Agung</td>
         </tr>
         <tr>
-            <td>"Boook"</td>
-            <td>"Izzah"</td>
+            <td>Book Menu</td>
+            <td>Izzah</td>
         </tr>
     </tbody>
   </table>
