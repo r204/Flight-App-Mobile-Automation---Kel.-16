@@ -15,5 +15,9 @@
             <td>Book Menu</td>
             <td>Izzah Tazkiyah</td>
         </tr>
+        <tr>
+            <td>Sign Out</td>
+            <td>Izzah Tazkiyah</td>
+        </tr>
     </tbody>
   </table>

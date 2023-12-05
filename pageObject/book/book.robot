@@ -121,3 +121,7 @@ Select Price
 Click Confirm Booking
     Wait Until Element Is Visible    ${confirmBook}
     Click Element                    ${confirmBook}
+
+Click Back To Menu
+    Wait Until Element Is Visible    ${backToMenu}
+    Click Element                    ${backToMenu}

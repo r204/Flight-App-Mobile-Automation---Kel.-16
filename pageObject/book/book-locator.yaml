@@ -26,3 +26,4 @@ dayCheckbox: //android.widget.CheckBox[@resource-id="com.example.myapplication:i
 bookFlightButton: //android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
 price: //android.widget.Button[@resource-id="com.example.myapplication:id/price5"]
 confirmBook: //android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]
+backToMenu: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]
