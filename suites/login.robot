@@ -4,7 +4,7 @@ Resource    ../pageObject/SignIn/signIn.robot
 
 
 *** Variables ***
-${VALID_USERNAME}       admin
+${VALID_USERNAME}       admin@test.com
 ${VALID_PASSWORD}       manager
 ${INVALID_USERNAME}     invalid
 ${INVALID_PASSWORD}     invalid
@@ -24,5 +24,18 @@ Login with invalid data
     Click Sign In Button on Home Page
     Input Username signIn    ${INVALID_USERNAME}
     Input Password signIn    ${INVALID_PASSWORD}
+    Click signIn Button
+    Close Flight Application
+
+Login without password
+    Open Flight Application
+    Click Sign In Button on Home Page
+    Input Username signIn    ${VALID_USERNAME}
+    Click signIn Button
+    Close Flight Application
+
+Login without data
+    Open Flight Application
+    Click Sign In Button on Home Page
     Click signIn Button
     Close Flight Application

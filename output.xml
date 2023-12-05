@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 6.1.1 (Python 3.10.7 on win32)" generated="20231205 12:02:11.441" rpa="false" schemaversion="4">
 <suite id="s1" name="Book" source="D:\Course\Sanbercode\QA\Flight-App-Mobile-Automation---Kel.-16\suites\book.robot">
 <test id="s1-t1" name="Successful Booking in One Way Flight and Type Flight" line="56">
 <kw name="Booking For One Way Option Steps">
 <arg>startend</arg>
 <arg>flight</arg>
+=======
+<robot generator="Robot 6.1.1 (Python 3.10.4 on win32)" generated="20231204 10:03:33.394" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="C:\Users\Asus\Documents\GitHub\Flight-App-Mobile-Automation---Kel.-16\suites\login.robot">
+<test id="s1-t1" name="Login with valid data" line="14">
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 <kw name="Open Flight Application" library="base">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=${REMOTE_URL}</arg>
@@ -20,73 +26,125 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20231205 12:02:12.204" endtime="20231205 12:02:29.533"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:12.204" endtime="20231205 12:02:29.534"/>
+=======
+<status status="PASS" starttime="20231204 10:03:33.650" endtime="20231204 10:03:41.289"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:33.649" endtime="20231204 10:03:41.289"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Sign In Button on Home Page" library="home">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:31.156" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:02:29.536" endtime="20231205 12:02:31.157"/>
+=======
+<msg timestamp="20231204 10:03:42.194" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:03:41.290" endtime="20231204 10:03:42.194"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:31.163" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
 <msg timestamp="20231205 12:02:31.433" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:02:31.157" endtime="20231205 12:02:31.433"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:29.534" endtime="20231205 12:02:31.433"/>
+=======
+<msg timestamp="20231204 10:03:42.196" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg timestamp="20231204 10:03:42.281" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:03:42.194" endtime="20231204 10:03:42.281"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:41.289" endtime="20231204 10:03:42.281"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Username signIn" library="signIn">
 <arg>${VALID_USERNAME}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:32.758" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
 xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:02:31.434" endtime="20231205 12:02:32.758"/>
+=======
+<msg timestamp="20231204 10:03:42.974" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
+xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:03:42.282" endtime="20231204 10:03:42.974"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:32.764" level="INFO">Typing text 'support@ngendigital.com' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
 <msg timestamp="20231205 12:02:33.065" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:02:32.759" endtime="20231205 12:02:33.065"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:31.433" endtime="20231205 12:02:33.066"/>
+=======
+<msg timestamp="20231204 10:03:42.976" level="INFO">Typing text 'admin@test.com' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
+<msg timestamp="20231204 10:03:43.044" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:03:42.974" endtime="20231204 10:03:43.044"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:42.282" endtime="20231204 10:03:43.044"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Password signIn" library="signIn">
 <arg>${VALID_PASSWORD}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${password_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:33.560" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
 <status status="PASS" starttime="20231205 12:02:33.067" endtime="20231205 12:02:33.562"/>
+=======
+<msg timestamp="20231204 10:03:43.585" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:43.046" endtime="20231204 10:03:43.585"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${password_input}</arg>
 <arg>${password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:33.567" level="INFO">Typing text 'abc123' into text field '//*[@resource-id="com.example.myapplication:id/password"]'</msg>
 <msg timestamp="20231205 12:02:33.707" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
 <status status="PASS" starttime="20231205 12:02:33.562" endtime="20231205 12:02:33.707"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:33.066" endtime="20231205 12:02:33.707"/>
+=======
+<msg timestamp="20231204 10:03:43.587" level="INFO">Typing text 'manager' into text field '//*[@resource-id="com.example.myapplication:id/password"]'</msg>
+<msg timestamp="20231204 10:03:43.642" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:43.585" endtime="20231204 10:03:43.643"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:43.045" endtime="20231204 10:03:43.643"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click signIn Button" library="signIn">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:34.318" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:02:33.708" endtime="20231205 12:02:34.318"/>
+=======
+<msg timestamp="20231204 10:03:44.180" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:43.644" endtime="20231204 10:03:44.180"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:02:34.322" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
 <msg timestamp="20231205 12:02:34.553" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:02:34.318" endtime="20231205 12:02:34.554"/>
@@ -449,6 +507,22 @@ xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:
 <status status="PASS" starttime="20231205 12:02:12.203" endtime="20231205 12:02:57.569"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:12.201" endtime="20231205 12:02:57.572"/>
+=======
+<msg timestamp="20231204 10:03:44.182" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
+<msg timestamp="20231204 10:03:44.247" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
+<status status="PASS" starttime="20231204 10:03:44.180" endtime="20231204 10:03:44.247"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:43.643" endtime="20231204 10:03:44.247"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20231204 10:03:44.249" endtime="20231204 10:03:44.841"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:44.247" endtime="20231204 10:03:44.841"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:33.649" endtime="20231204 10:03:44.843"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </test>
 <test id="s1-t2" name="Successful Booking in One Way Flight and Type Flight Hotel" line="60">
 <kw name="Booking For One Way Option Steps">
@@ -469,73 +543,125 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20231205 12:02:57.579" endtime="20231205 12:03:14.079"/>
 </kw>
 <status status="PASS" starttime="20231205 12:02:57.578" endtime="20231205 12:03:14.079"/>
+=======
+<status status="PASS" starttime="20231204 10:03:44.846" endtime="20231204 10:03:52.220"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:44.845" endtime="20231204 10:03:52.220"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Sign In Button on Home Page" library="home">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:15.432" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:03:14.081" endtime="20231205 12:03:15.432"/>
+=======
+<msg timestamp="20231204 10:03:53.137" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:03:52.220" endtime="20231204 10:03:53.137"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:15.437" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
 <msg timestamp="20231205 12:03:15.650" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:03:15.433" endtime="20231205 12:03:15.650"/>
 </kw>
 <status status="PASS" starttime="20231205 12:03:14.080" endtime="20231205 12:03:15.651"/>
+=======
+<msg timestamp="20231204 10:03:53.139" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg timestamp="20231204 10:03:53.233" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:03:53.137" endtime="20231204 10:03:53.233"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:52.220" endtime="20231204 10:03:53.233"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Username signIn" library="signIn">
 <arg>${VALID_USERNAME}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:16.796" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
 xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:03:15.652" endtime="20231205 12:03:16.796"/>
+=======
+<msg timestamp="20231204 10:03:53.917" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
+xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:03:53.234" endtime="20231204 10:03:53.917"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:16.800" level="INFO">Typing text 'support@ngendigital.com' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
 <msg timestamp="20231205 12:03:17.003" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:03:16.796" endtime="20231205 12:03:17.004"/>
 </kw>
 <status status="PASS" starttime="20231205 12:03:15.651" endtime="20231205 12:03:17.004"/>
+=======
+<msg timestamp="20231204 10:03:53.920" level="INFO">Typing text 'invalid' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
+<msg timestamp="20231204 10:03:53.981" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:03:53.917" endtime="20231204 10:03:53.981"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:53.234" endtime="20231204 10:03:53.981"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Password signIn" library="signIn">
 <arg>${VALID_PASSWORD}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${password_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:17.652" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
 <status status="PASS" starttime="20231205 12:03:17.007" endtime="20231205 12:03:17.652"/>
+=======
+<msg timestamp="20231204 10:03:54.524" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:53.983" endtime="20231204 10:03:54.524"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${password_input}</arg>
 <arg>${password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:17.657" level="INFO">Typing text 'abc123' into text field '//*[@resource-id="com.example.myapplication:id/password"]'</msg>
 <msg timestamp="20231205 12:03:17.805" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
 <status status="PASS" starttime="20231205 12:03:17.652" endtime="20231205 12:03:17.805"/>
 </kw>
 <status status="PASS" starttime="20231205 12:03:17.006" endtime="20231205 12:03:17.805"/>
+=======
+<msg timestamp="20231204 10:03:54.526" level="INFO">Typing text 'invalid' into text field '//*[@resource-id="com.example.myapplication:id/password"]'</msg>
+<msg timestamp="20231204 10:03:54.581" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:54.524" endtime="20231204 10:03:54.581"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:53.982" endtime="20231204 10:03:54.581"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click signIn Button" library="signIn">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:18.444" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:03:17.807" endtime="20231205 12:03:18.444"/>
+=======
+<msg timestamp="20231204 10:03:55.120" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:03:54.582" endtime="20231204 10:03:55.120"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:03:18.449" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
 <msg timestamp="20231205 12:03:18.632" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:03:18.444" endtime="20231205 12:03:18.632"/>
@@ -901,6 +1027,24 @@ xpath criteria: //android.view.View[@resource-id="android:id/month_view"]</msg>
 <kw name="Booking For One Way Option Steps">
 <arg>startend</arg>
 <arg>" "</arg>
+=======
+<msg timestamp="20231204 10:03:55.122" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
+<msg timestamp="20231204 10:03:55.198" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
+<status status="PASS" starttime="20231204 10:03:55.120" endtime="20231204 10:03:55.198"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:54.581" endtime="20231204 10:03:55.198"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20231204 10:03:55.199" endtime="20231204 10:03:55.804"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:55.199" endtime="20231204 10:03:55.804"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:44.844" endtime="20231204 10:03:55.805"/>
+</test>
+<test id="s1-t3" name="Login without password" line="30">
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 <kw name="Open Flight Application" library="base">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=${REMOTE_URL}</arg>
@@ -916,14 +1060,21 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20231205 12:03:42.383" endtime="20231205 12:03:58.607"/>
 </kw>
 <status status="PASS" starttime="20231205 12:03:42.382" endtime="20231205 12:03:58.607"/>
+=======
+<status status="PASS" starttime="20231204 10:03:55.806" endtime="20231204 10:04:03.214"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:55.806" endtime="20231204 10:04:03.214"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Sign In Button on Home Page" library="home">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:04:04.456" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
 &lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="1794"&gt;
   &lt;android.widget.FrameLayout index="0" package="com.google.android.apps.nexuslauncher" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
@@ -5051,10 +5202,15 @@ xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]
 xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <msg timestamp="20231205 12:04:05.040" level="FAIL">Element locator '//*[@resource-id="com.example.myapplication:id/login"]' did not match any elements after 5 seconds</msg>
 <status status="FAIL" starttime="20231205 12:03:58.610" endtime="20231205 12:04:05.041"/>
+=======
+<msg timestamp="20231204 10:04:04.148" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:04:03.214" endtime="20231204 10:04:04.148"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <status status="NOT RUN" starttime="20231205 12:04:05.042" endtime="20231205 12:04:05.042"/>
 </kw>
 <status status="FAIL" starttime="20231205 12:03:58.608" endtime="20231205 12:04:05.042"/>
@@ -5207,20 +5363,34 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <status status="PASS" starttime="20231205 12:04:21.796" endtime="20231205 12:04:22.037"/>
 </kw>
 <status status="PASS" starttime="20231205 12:04:20.427" endtime="20231205 12:04:22.037"/>
+=======
+<msg timestamp="20231204 10:04:04.150" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg timestamp="20231204 10:04:04.249" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:04:04.148" endtime="20231204 10:04:04.249"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:03.214" endtime="20231204 10:04:04.249"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Username signIn" library="signIn">
 <arg>${VALID_USERNAME}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:04:23.223" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
 xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:04:22.039" endtime="20231205 12:04:23.223"/>
+=======
+<msg timestamp="20231204 10:04:04.946" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]
+xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:04:04.250" endtime="20231204 10:04:04.946"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username_input}</arg>
 <arg>${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:04:23.227" level="INFO">Typing text 'support@ngendigital.com' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
 <msg timestamp="20231205 12:04:23.391" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <status status="PASS" starttime="20231205 12:04:23.223" endtime="20231205 12:04:23.391"/>
@@ -5251,10 +5421,25 @@ xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <doc>Waits until element specified with `locator` is visible.</doc>
 <msg timestamp="20231205 12:04:24.795" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:04:24.175" endtime="20231205 12:04:24.795"/>
+=======
+<msg timestamp="20231204 10:04:04.948" level="INFO">Typing text 'admin@test.com' into text field '//*[@resource-id="com.example.myapplication:id/username"]'</msg>
+<msg timestamp="20231204 10:04:05.013" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
+<status status="PASS" starttime="20231204 10:04:04.947" endtime="20231204 10:04:05.013"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:04.250" endtime="20231204 10:04:05.013"/>
+</kw>
+<kw name="Click signIn Button" library="signIn">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${password_input}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231204 10:04:05.549" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:04:05.014" endtime="20231204 10:04:05.550"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:04:24.800" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
 <msg timestamp="20231205 12:04:25.032" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:04:24.795" endtime="20231205 12:04:25.032"/>
@@ -5545,6 +5730,24 @@ xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:
 <kw name="Booking For One Way Option Steps">
 <arg>end</arg>
 <arg>flight and hotel</arg>
+=======
+<msg timestamp="20231204 10:04:05.551" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
+<msg timestamp="20231204 10:04:05.630" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
+<status status="PASS" starttime="20231204 10:04:05.550" endtime="20231204 10:04:05.630"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:05.014" endtime="20231204 10:04:05.630"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20231204 10:04:05.631" endtime="20231204 10:04:06.202"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:05.631" endtime="20231204 10:04:06.202"/>
+</kw>
+<status status="PASS" starttime="20231204 10:03:55.805" endtime="20231204 10:04:06.203"/>
+</test>
+<test id="s1-t4" name="Login without data" line="37">
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 <kw name="Open Flight Application" library="base">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=${REMOTE_URL}</arg>
@@ -5560,20 +5763,32 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<<<<<<< HEAD
 <status status="PASS" starttime="20231205 12:04:40.526" endtime="20231205 12:04:58.665"/>
 </kw>
 <status status="PASS" starttime="20231205 12:04:40.526" endtime="20231205 12:04:58.666"/>
+=======
+<status status="PASS" starttime="20231204 10:04:06.204" endtime="20231204 10:04:13.646"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:06.204" endtime="20231204 10:04:13.646"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Sign In Button on Home Page" library="home">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:05:00.036" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:04:58.667" endtime="20231205 12:05:00.036"/>
+=======
+<msg timestamp="20231204 10:04:14.549" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:04:13.647" endtime="20231204 10:04:14.549"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin-button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:05:00.042" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
 <msg timestamp="20231205 12:05:00.839" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
 <status status="PASS" starttime="20231205 12:05:00.037" endtime="20231205 12:05:00.839"/>
@@ -9963,10 +10178,26 @@ xpath criteria: //*[@resource-id="com.example.myapplication:id/username"]</msg>
 <doc>Waits until element specified with `locator` is visible.</doc>
 <msg timestamp="20231205 12:05:31.259" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:05:30.626" endtime="20231205 12:05:31.260"/>
+=======
+<msg timestamp="20231204 10:04:14.551" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg timestamp="20231204 10:04:14.650" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231204 10:04:14.549" endtime="20231204 10:04:14.650"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:13.647" endtime="20231204 10:04:14.650"/>
+</kw>
+<kw name="Click signIn Button" library="signIn">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${password_input}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231204 10:04:15.492" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]
+xpath criteria: //*[@resource-id="com.example.myapplication:id/password"]</msg>
+<status status="PASS" starttime="20231204 10:04:14.651" endtime="20231204 10:04:15.493"/>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Click element identified by `locator`.</doc>
+<<<<<<< HEAD
 <msg timestamp="20231205 12:05:31.264" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
 <msg timestamp="20231205 12:05:31.451" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
 <status status="PASS" starttime="20231205 12:05:31.260" endtime="20231205 12:05:31.452"/>
@@ -10334,11 +10565,37 @@ UnknownError: An unknown server-side error occurred while processing the command
 <statistics>
 <total>
 <stat pass="3" fail="4" skip="0">All Tests</stat>
+=======
+<msg timestamp="20231204 10:04:15.497" level="INFO">Clicking element '//*[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
+<msg timestamp="20231204 10:04:15.583" level="INFO">xpath criteria: //*[@resource-id="com.example.myapplication:id/signIn"]</msg>
+<status status="PASS" starttime="20231204 10:04:15.493" endtime="20231204 10:04:15.583"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:14.651" endtime="20231204 10:04:15.583"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20231204 10:04:15.584" endtime="20231204 10:04:16.172"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:15.583" endtime="20231204 10:04:16.172"/>
+</kw>
+<status status="PASS" starttime="20231204 10:04:06.204" endtime="20231204 10:04:16.172"/>
+</test>
+<status status="PASS" starttime="20231204 10:03:33.396" endtime="20231204 10:04:16.173"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< HEAD
 <stat pass="3" fail="4" skip="0" id="s1" name="Book">Book</stat>
+=======
+<stat pass="4" fail="0" skip="0" id="s1" name="Login">Login</stat>
+>>>>>>> f5eb1584399c9a348b0dc1fb7820d7211a25af17
 </suite>
 </statistics>
 <errors>
