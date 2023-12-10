@@ -16,6 +16,10 @@
             <td>Izzah Tazkiyah</td>
         </tr>
         <tr>
+            <td>Search</td>
+            <td>Izzah Tazkiyah</td>
+        </tr>
+        <tr>
             <td>Sign Out</td>
             <td>Izzah Tazkiyah</td>
         </tr>
